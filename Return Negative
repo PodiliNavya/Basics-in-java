@@ -1,0 +1,38 @@
+Return Negative
+Description:
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+INPUT 1:
+7
+OUTPUT 1:
+-7
+INPUT 2:
+-52
+OUTPUT 2:
+-52
+INPUT 3:
+0
+OUTPUT 3:
+0
+
+
+
+import java.util.*;
+public class Negative
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,a;
+        n=sc.nextInt();
+        if(n>=0)
+        {
+        a=(~(n-1));
+        System.out.print(a);
+        }
+        else
+        {
+            System.out.print(n);
+        }
+        
+    }
+}
