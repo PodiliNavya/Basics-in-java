@@ -1,0 +1,36 @@
+Play with X1, X2 and Y1,Y2
+java program to calculate the distance between two points. 
+How to calculate the distance between two points?
+The distance between two points formula is derived from the Pythagorean Theorem.
+What is the formula to find the distance between two points?
+Use the Pythagoras formula to find the distance.  
+Input Order: 
+x1, Y1, X2, Y2
+Sample Input: 
+11
+5
+5
+5
+Sample Output: 
+5.0
+
+
+
+import java.util.Scanner;
+public class Play
+{
+	public static void main(String arg[])
+	{
+             	 int x1,x2,y1,y2;
+	         double dis;
+	             Scanner sc=new Scanner(System.in);
+                 x1=sc.nextInt();
+                 y1=sc.nextInt();
+                 x2=sc.nextInt();
+                 y2=sc.nextInt();
+		 dis=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+  	         System.out.println(dis);
+
+	}
+
+}
